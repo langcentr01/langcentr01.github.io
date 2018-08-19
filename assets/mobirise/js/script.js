@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    var count = 1;
+    var prevValue = 1;
+    
     $("#btn-callback-carousel").on("click", function(){
       $("#callback-modal").modal('show');
     });
@@ -115,8 +118,23 @@ $(document).ready(function() {
         $('#inputTime2').val(d + '-' + m + '-' + y + ' ' + h + ':' + min);
         $('#inputTime3').val(d + '-' + m + '-' + y + ' ' + h + ':' + min);
       };
+
+
+      function slideTeachers() {
+        if(count <= 7) {
+            console.log(count);
+            $("#teacher-"+prevValue).css('display','none');
+            $("#teacher-"+count).css('display','block');
+            prevValue = count;
+            count++;
+        } else {
+            count = 1;
+        }
+      };
+      
       getDateNow();
-    }, 5000);
+      slideTeachers();
+    }, 2000);
   });
 
   $(document.body).on('hide.bs.modal,hidden.bs.modal', function () {
