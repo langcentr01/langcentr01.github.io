@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var count = 1;
     var prevValue = 1;
-    
+
     $("#btn-callback-carousel").on("click", function(){
       $("#callback-modal").modal('show');
     });
@@ -90,6 +90,22 @@ $(document).ready(function() {
         $("#modal-lessons1").modal('show');
     });
 
+    $("#details1").on("click", function(){
+        $("#modal-info1").modal('show');
+    });
+
+    $("#details2").on("click", function(){
+        $("#modal-info2").modal('show');
+    });
+
+    $("#details3").on("click", function(){
+        $("#modal-info3").modal('show');
+    });
+
+    $("#details4").on("click", function(){
+        $("#modal-info4").modal('show');
+    });
+
     $("#btn-callback-carousel-ok").on("click", function(){
       $("#callback-modal").modal('hide');
     });
@@ -121,15 +137,17 @@ $(document).ready(function() {
 
 
       function slideTeachers() {
-        if(count <= 7) {
-            console.log(count);
-            $("#teacher-"+prevValue).css('display','none');
-            $("#teacher-"+count).css('display','block');
-            prevValue = count;
-            count++;
-        } else {
-            count = 1;
-        }
+          if (!$("#testimonials3-0").is(":hover")) {
+            if(count <= 7) {
+                console.log(count);
+                $("#teacher-"+prevValue).css('display','none');
+                $("#teacher-"+count).css('display','block');
+                prevValue = count;
+                count++;
+            } else {
+                count = 1;
+            }
+          }
       };
       
       getDateNow();

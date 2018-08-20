@@ -522,9 +522,7 @@ h6,
 #msg-box3-2 .mbr-section-title {
   font-family: 'Lora', serif;
 }
-#msg-box3-2 .lead P {
-  font-size: 20px;
-}
+
 #header2-3 .mbr-section-title {
   color: #000000;
   text-align: center;
@@ -839,59 +837,7 @@ h6,
 
 
 
-.label-w {
-  color: white !important;
-  font-size: 18px;
-}
 
-.input-w {
-  width: 435px !important; 
-  margin-bottom: 10px; 
-  background-color: transparent !important; 
-  color: white; 
-  font-size: 18px;
-}
-
-.btn-font {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.btn-font2 {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.ubuntu20 {
-  font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-}
-
-.box-issue {
-  border: 1px solid gray; 
-  min-height: 450px;
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.price-features {
-  font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: left;
-}
-
-.img-round {
-  border-radius: 10px;
-}
-
-.mbr-cards .card-img + .card-block {
-  padding-top: 10px !important;
-}
 
 .section-map {
 	height:450px; 
@@ -1240,15 +1186,15 @@ a.phone-a {
   }
 
   .section-map {
-    height: 904px;
+    height: 450px;
   }
 
   .hidden-xs {
-    display: none;
+    display: none !important;
   }
 
   .visible-xs {
-    display: block;
+    display: block !important;
   }
 
 	.map-frame {
@@ -1296,18 +1242,311 @@ a.phone-a {
     /* border-radius: 50% has issues on some mobile browsers */
     }
 
+    .start-header {
+      font-size: 30px !important; 
+      text-shadow: 2px 2px 2px black;
+      text-align: center !important;
+    }
+
+    .start-header2 {
+      font-size: 22px !important; 
+      text-shadow: 2px 2px 2px black;
+      font-weight: bold !important;
+      font-style: normal !important;
+      text-align: center !important;
+    }
+
+    .start-request {
+      border: 3px solid white;
+      /* max-height: 590px;  */
+      height: auto; 
+      width: auto; 
+      padding: 15px 30px 0px 30px;
+    }
+
+    .start-request-h {
+      text-align: left; 
+      font-family: 'Ubuntu', sans-serif; 
+      font-size: 22px; 
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      text-shadow: 2px 2px 2px black;
+    }
+
+
+    .label-w {
+      color: white !important;
+      font-size: 14px;
+      text-align: left !important;
+    }
+    
+    .input-w {
+      width: 100% !important; 
+      margin-bottom: 0px; 
+      background-color: transparent !important; 
+      color: white; 
+      font-size: 14px;
+    }
+    
+    .btn-font {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .btn-font2 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .ubuntu20 {
+      font-size: 20px;
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center;
+    }
+    
+    .box-issue {
+      border: 1px solid gray; 
+      min-height: 450px;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    
+    .price-features {
+      font-size: 18px;
+      font-family: 'Ubuntu', sans-serif;
+      text-align: left;
+    }
+    
+    .img-round {
+      border-radius: 10px;
+    }
+    
+    .mbr-cards .card-img + .card-block {
+      padding-top: 10px !important;
+    }
+
+    .mbr-section.col-md-5.col-xs-12.mobile {
+      padding-top: 0 !important;
+    }
+
+    .mbr-section.col-md-7.col-xs-12.mobile {
+      padding-bottom: 50px !important;
+    }
+
+    .blue-border {
+      border: 4px solid #4CC5F3;
+      width: 100%; 
+      height: auto; 
+      padding: 80px 10px 20px 10px;
+    }
+    
+    .why-img {
+      height: 100px; 
+      position: absolute; 
+      top:-53px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .font30m {
+      font-size: 30px !important;
+    }
+
+    .font22m {
+      font-size: 22px !important;
+    }
+
+    .font18m {
+      font-size: 18px !important;
+    }
+
+    #msg-box3-2 .lead P {
+      font-size: 18px;
+    }
+
+    .dont-know-english {
+      font-weight: bold; 
+      font-size: 22px; 
+      text-shadow: 1px 1px 1px black;
+    }
+
+    .price-height {
+      height: 500px !important;
+    }
+
+    .red-border {
+      border: 6px solid #C1272D; 
+      z-index: 1;
+      height: 630px;
+    }
+
+    .red-border-padding {
+      padding-top: 120px;
+    }
+
+    .red-border-header {
+      position: absolute; 
+      bottom: 550px; 
+      background-color: white !important; 
+      z-index: 999;
+    }
+
+    .text-center {
+      text-align: center !important;
+    }
 }
 
 
 
 /* MD */
 @media(min-width:768px) {
+  .red-border-header {
+    position: absolute; 
+    bottom: 320px; 
+    background-color: white !important; 
+    z-index: 999;
+  }
+  
+  .red-border {
+    border: 6px solid #C1272D; 
+    z-index: 1;
+    height: 400px;
+  }
+
+  .red-border-padding {
+    padding-top: 120px;
+  }
+
+  .dont-know-english {
+    font-weight: bold; 
+    font-size: 28px; 
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .container-fluid-margin2 {
+    margin-left: 100px; 
+    margin-right: 100px;
+  }
+
+  #msg-box3-2 .lead P {
+    font-size: 20px;
+  }
+
+  .why-img {
+    height: 150px; 
+    position: absolute; 
+    top:-30px;
+    left: -45px;
+  }
+
+  .blue-border {
+    border: 4px solid #4CC5F3;
+    width: 100%; 
+    height: auto; 
+    padding: 50px 150px 50px 150px;
+  }
+
+  .label-w {
+    color: white !important;
+    font-size: 18px;
+  }
+  
+  .input-w {
+    width: 435px !important; 
+    margin-bottom: 10px; 
+    background-color: transparent !important; 
+    color: white; 
+    font-size: 18px;
+  }
+  
+  .btn-font {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .btn-font2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .ubuntu20 {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+  }
+  
+  .box-issue {
+    border: 1px solid gray; 
+    min-height: 450px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .price-features {
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+  }
+  
+  .img-round {
+    border-radius: 10px;
+  }
+  
+  .mbr-cards .card-img + .card-block {
+    padding-top: 10px !important;
+  }
+
+
+  .start-request-h {
+    text-align: left; 
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 24px; 
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .start-request {
+    border: 3px solid white;
+    max-height: 590px; 
+    height: auto; 
+    width: 500px; 
+    padding: 15px 30px 0px 30px;
+  }
+
+  .container-fluid-margin {
+    margin-left: 150px; 
+    margin-right: 150px;
+  }
+
+  .start-header {
+    font-size: 60px !important; 
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .start-header2 {
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold !important;
+    font-style: normal !important;
+  }
+
   .hidden-xs {
-    display: block;
+    display: block !important;
   }
 
   .visible-xs {
-    display: none;
+    display: none !important;
   }
 
   .btn-align {
@@ -1498,4 +1737,9 @@ a.phone-a {
 .cid-r0cj1FgFt9 H2 {
   color: #ffffff;
   text-align: right;
+}
+
+table.table-price td {
+  padding: 0 !important;
+  border-color: transparent !important;
 }
