@@ -849,7 +849,7 @@ h6,
 	position: absolute; 
 	width: 80px;
 	height: 80px;
-	background-image: url('../img/phone.png');
+	/* background-image: url('../img/phone.png'); */
 	/* background-color: #155fc7; */
 	background-size: 60px 60px;
 	margin: auto; 
@@ -1176,6 +1176,19 @@ a.phone-a {
 	color: rgb(139, 20, 185);
 }
 
+a.nav-link link:hover {
+  color: #f2f2f2 !important;
+}
+
+nav.transparent a:hover {
+  color: white !important;
+  text-shadow: 1px 1px 1px black;
+}
+
+nav.transparent a:focus {
+  color: white !important;
+}
+
 /* XS */
 @media(max-width:767px) {
   .second-map, .first-map {
@@ -1216,7 +1229,7 @@ a.phone-a {
     position: absolute; 
     width: 60px;
     height: 60px;
-    background-image: url('../../images/phone.png');
+    /* background-image: url('../../images/phone.png'); */
     /* background-color: #155fc7; */
     background-size: 60px 60px;
     margin: auto; 
@@ -1400,12 +1413,28 @@ a.phone-a {
     .text-center {
       text-align: center !important;
     }
+
+    .slideBtnPosition {
+      line-height: 50;
+    }
+
+    .fa-Mx {
+      font-size: 2em !important;
+    }
+
+    p.testimonial-text, p.mbr-author-desc, p.mbr-author-name {
+      text-align: center !important;
+    }
 }
 
 
 
 /* MD */
 @media(min-width:768px) {
+  .slideBtnPosition {
+    line-height: 400px;
+  }
+
   .red-border-header {
     position: absolute; 
     bottom: 320px; 
@@ -1568,7 +1597,7 @@ a.phone-a {
     position: absolute; 
     width: 80px;
     height: 80px;
-    background-image: url('../img/phone.png');
+    /* background-image: url('../img/phone.png'); */
     /* background-color: #155fc7; */
     background-size: 60px 60px;
     margin: auto; 

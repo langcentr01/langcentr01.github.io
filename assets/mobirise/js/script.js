@@ -1,6 +1,7 @@
-$(document).ready(function() {
-    var count = 1;
-    var prevValue = 1;
+// $(document).ready(function() {
+    var current = 1;
+    var next = 1;
+    var stopSlider = false;
 
     $("#btn-callback-carousel").on("click", function(){
       $("#callback-modal").modal('show');
@@ -48,11 +49,6 @@ $(document).ready(function() {
     $("#lessons-7").on("click", function(){
         $("#modal-lessons1").modal('show');
     });
-
-
-
-
-
 
     $("#call-form-1").on("click", function(){
         $("#modal-lessons1").modal('show');
@@ -118,6 +114,48 @@ $(document).ready(function() {
       $("#success-modal").modal('hide');
     });
 
+    function slideTeachers() {
+        if (!stopSlider) {
+          if (next < 7) {
+            next = next + 1;
+            $("#teacher-"+current).css('display','none');
+            $("#teacher-"+next).css('display','block');
+            current = next;
+          } else {
+              next = 1;
+              $("#teacher-"+current).css('display','none');
+              $("#teacher-"+next).css('display','block');
+              current = next;
+          }
+        }
+    };
+
+    function slideToLeft() {
+        if(current !== 1) {
+            stopSlider = true;
+            for(var i = 1; i < 8; i++) {
+                $("#teacher-"+i).css('display','none');
+            }
+            current -= 1;
+            next = current;
+            $("#teacher-"+current).css('display','block');
+        }
+    };
+
+    function slideToRight() {
+        if(current !== 7) {
+            stopSlider = true;
+            for(var i = 1; i < 8; i++) {
+                $("#teacher-"+i).css('display','none');
+            }
+            next = current + 1;
+            current = next;
+            $("#teacher-"+next).css('display','block');
+        }
+    };
+
+    
+
     window.setInterval(function() {
       function getDateNow() {
         var n =  new Date();
@@ -135,25 +173,10 @@ $(document).ready(function() {
         $('#inputTime3').val(d + '-' + m + '-' + y + ' ' + h + ':' + min);
       };
 
-
-      function slideTeachers() {
-          if (!$("#testimonials3-0").is(":hover")) {
-            if(count <= 7) {
-                console.log(count);
-                $("#teacher-"+prevValue).css('display','none');
-                $("#teacher-"+count).css('display','block');
-                prevValue = count;
-                count++;
-            } else {
-                count = 1;
-            }
-          }
-      };
-      
       getDateNow();
       slideTeachers();
-    }, 2000);
-  });
+    }, 2500);
+//   });
 
   $(document.body).on('hide.bs.modal,hidden.bs.modal', function () {
     $('body').css('padding-right','0');
