@@ -1419,7 +1419,7 @@ nav.transparent a:focus {
     }
 
     .fa-Mx {
-      font-size: 2em !important;
+      font-size: 1.5em !important;
     }
 
     p.testimonial-text, p.mbr-author-desc, p.mbr-author-name {
@@ -1427,7 +1427,22 @@ nav.transparent a:focus {
     }
 }
 
+@media only screen and (max-width: 1366px) and (min-width: 1024px){
+  .container-fluid-margin {
+    margin-left: 45px !important;  
+    margin-right: 90px !important;
+  }
 
+  #ext_menu-0 .link {
+    font-size: 12px !important;
+  }
+
+  .dont-know-english {
+    font-weight: bold; 
+    font-size: 24px !important; 
+    text-shadow: 1px 1px 1px black;
+  }
+}
 
 /* MD */
 @media(min-width:768px) {
@@ -1445,7 +1460,7 @@ nav.transparent a:focus {
   .red-border {
     border: 6px solid #C1272D; 
     z-index: 1;
-    height: 400px;
+    height: 430px;
   }
 
   .red-border-padding {
