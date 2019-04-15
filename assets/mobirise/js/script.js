@@ -132,6 +132,10 @@
         document.getElementById('background-banner').style.display = 'none';
     });
 
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
     function slideTeachers() {
         if (!stopSlider) {
           if (next < 7) {

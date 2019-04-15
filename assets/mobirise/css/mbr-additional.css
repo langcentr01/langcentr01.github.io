@@ -1793,7 +1793,17 @@ table.table-price td {
 }
 
 .banner {
-  position: fixed; z-index: 10000; width: 950px; height: 750px; border: 4px solid blue; top: 0; bottom: 0; left: 0; right: 0; margin: auto;background-color: white;border-radius: 4px;
+  position: fixed; 
+  z-index: 10000; 
+  width: 850px; 
+  height: 600px; 
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  margin: auto;
+  background-image: linear-gradient(#77BA5B, white);
+  border-radius: 4px;
 }
 
 .close-banner {
@@ -1825,26 +1835,26 @@ table.table-price td {
 }
 
 .img-banner {
-  width: 500px;
-  position: block;padding-top:5px;
+  width: 400px;
+  position: block;
+  padding-top: 5px;
   transition: all 0.5s;
 }
 
 .header-banner {
-  color: #f84e4e;
+  color: #2056AD !important;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   padding-top: 0px;
-  text-shadow: 1px 1px 1px #464646;
-  background-color: yellow;
+  text-shadow: 1px 1px 1px #ffffff;
   margin-top: 10px;
 }
 
 .label-banner {
-  font-size: 25px;
-  color: #f84e4e;
+  font-size: 20px;
+  color: #ff0000;
   font-weight: bold;
-  background-color: yellow;
+  text-shadow: 1px 1px 1px #ffffff;
   line-height: 1;
 }
 
@@ -1853,7 +1863,8 @@ table.table-price td {
 }
 
 .card-banner {
-  height: 130px;background-size: cover;
+  height: 100px;
+  background-size: cover;
 }
 
 .card-p-banner {
@@ -1866,8 +1877,8 @@ table.table-price td {
 
 .button-banner {
   text-transform: uppercase;
-  font-weight:bold !important;
   text-shadow:1px 1px 1px black;
+  padding-left: 20px;
 }
 
 .fa-banner {
@@ -1891,19 +1902,41 @@ table.table-price td {
   transform: scale(1.1);
 }
 
+.end-banner {
+  text-align: center;
+  color: #f84e4e;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px white;
+}
+
+.popover {
+  z-index: 99999999999;
+  font-weight: 500 !important;
+}
+
+.label-banner .fa {
+  color: #2056AD !important;
+  font-size: 25px;
+  position: relative;
+  left: -5px;
+}
+.ads-mobile {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .banner {
     position: relative !important; 
     width: 100% !important; 
     height: auto !important; 
-    border: 4px solid blue; 
     top: 0; 
     bottom: 0; 
     left: 0; 
     right: 0; 
     margin: auto;
-    background-color: white;
-    border-radius: 4px;
   }
   .img-banner {
     width: 100% !important;
@@ -1930,5 +1963,21 @@ table.table-price td {
   }
   .card-banner {
     height: 100px !important;
+  }
+  .ads-mobile {
+    display: inline-block !important;
+    color: red;
+    background-color: yellow;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .end-banner {
+    margin-bottom: 10px;
   }
 }
