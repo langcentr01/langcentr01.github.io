@@ -1787,3 +1787,148 @@ table.table-price td {
   padding: 0 !important;
   border-color: transparent !important;
 }
+
+.background-banner {
+  background-color: rgba(0, 0, 0, 0.555); position: fixed; width: 100%; height: 100%;z-index: 9999;
+}
+
+.banner {
+  position: fixed; z-index: 10000; width: 950px; height: 750px; border: 4px solid blue; top: 0; bottom: 0; left: 0; right: 0; margin: auto;background-color: white;border-radius: 4px;
+}
+
+.close-banner {
+  color: rgba(255, 0, 0, 0.589);font-size: 30px !important;position:absolute;right: 13px;top: 5px;
+}
+
+.ads-banner {
+  transform: rotate(50deg);
+            color: red;
+            position: absolute;
+            top: 90px;
+            font-weight: bold;
+            right: -34px;
+            z-index: 2;
+            font-weight: 14px !important;
+            font-size: 19px;
+}
+
+.ads-banner-bg {
+  transform: rotate(50deg);
+  background-color: yellow;
+  position: absolute;
+  top: 88px;
+  right: -35px;
+  height: 25px;
+  width: 245px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.img-banner {
+  width: 500px;
+  position: block;padding-top:5px;
+  transition: all 0.5s;
+}
+
+.header-banner {
+  color: #f84e4e;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 0px;
+  text-shadow: 1px 1px 1px #464646;
+  background-color: yellow;
+  margin-top: 10px;
+}
+
+.label-banner {
+  font-size: 25px;
+  color: #f84e4e;
+  font-weight: bold;
+  background-color: yellow;
+  line-height: 1;
+}
+
+.padding-banner {
+  padding-left: 3px;padding-right: 3px;
+}
+
+.card-banner {
+  height: 130px;background-size: cover;
+}
+
+.card-p-banner {
+  padding-top: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 19px;
+}
+
+.button-banner {
+  text-transform: uppercase;
+  font-weight:bold !important;
+  text-shadow:1px 1px 1px black;
+}
+
+.fa-banner {
+  position: relative;font-size: 25px;
+}
+
+.close-banner:hover {
+  transform: scale(1.2);
+}
+
+.button-banner:hover {
+  transform: scale(1.03);
+}
+
+.card-banner:hover {
+  cursor: pointer;
+  border: 1px solid blue;
+}
+
+.img-banner:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .banner {
+    position: relative !important; 
+    width: 100% !important; 
+    height: auto !important; 
+    border: 4px solid blue; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    background-color: white;
+    border-radius: 4px;
+  }
+  .img-banner {
+    width: 100% !important;
+    padding-top: 30px !important;
+  }
+  .ads-banner {
+    display: none;
+  }
+  .ads-banner-bg {
+    display: none;
+  }
+  .close-banner {
+    color: rgb(255, 0, 0) !important;
+    font-size: 30px !important;
+    position: absolute;
+    right: 0 !important;
+    top: 0 !important;
+  }
+  .header-banner {
+    font-size: 30px !important;
+  }
+  .label-banner {
+    font-size: 20px !important;
+  }
+  .card-banner {
+    height: 100px !important;
+  }
+}

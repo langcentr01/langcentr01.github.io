@@ -114,6 +114,24 @@
       $("#success-modal").modal('hide');
     });
 
+    $("#button1-banner").on("click", function(){
+        $("#modal-banner").modal('show');
+        document.getElementById('banner').style.display = 'none';
+        document.getElementById('background-banner').style.display = 'none';
+    });
+
+    $("#button2-banner").on("click", function(){
+        $("#modal-banner").modal('show');
+        document.getElementById('banner').style.display = 'none';
+        document.getElementById('background-banner').style.display = 'none';
+    });
+
+    $("#button3-banner").on("click", function(){
+        $("#modal-banner").modal('show');
+        document.getElementById('banner').style.display = 'none';
+        document.getElementById('background-banner').style.display = 'none';
+    });
+
     function slideTeachers() {
         if (!stopSlider) {
           if (next < 7) {
