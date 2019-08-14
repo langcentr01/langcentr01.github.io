@@ -116,7 +116,7 @@
 
     function slideTeachers() {
         if (!stopSlider) {
-          if (next < 7) {
+          if (next < 9) {
             next = next + 1;
             $("#teacher-"+current).css('display','none');
             $("#teacher-"+next).css('display','block');
@@ -143,9 +143,9 @@
     };
 
     function slideToRight() {
-        if(current !== 7) {
+        if(current !== 9) {
             stopSlider = true;
-            for(var i = 1; i < 8; i++) {
+            for(var i = 1; i < 9; i++) {
                 $("#teacher-"+i).css('display','none');
             }
             next = current + 1;
