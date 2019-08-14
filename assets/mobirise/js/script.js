@@ -133,7 +133,7 @@
     function slideToLeft() {
         if(current !== 1) {
             stopSlider = true;
-            for(var i = 1; i < 8; i++) {
+            for(var i = 1; i < 9; i++) {
                 $("#teacher-"+i).css('display','none');
             }
             current -= 1;
