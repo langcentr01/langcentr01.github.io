@@ -116,7 +116,7 @@
 
     function slideTeachers() {
         if (!stopSlider) {
-          if (next < 9) {
+          if (next < 7) {
             next = next + 1;
             $("#teacher-"+current).css('display','none');
             $("#teacher-"+next).css('display','block');
@@ -133,7 +133,7 @@
     function slideToLeft() {
         if(current !== 1) {
             stopSlider = true;
-            for(var i = 1; i < 10; i++) {
+            for(var i = 1; i < 8; i++) {
                 $("#teacher-"+i).css('display','none');
             }
             current -= 1;
@@ -143,9 +143,9 @@
     };
 
     function slideToRight() {
-        if(current !== 9) {
+        if(current !== 7) {
             stopSlider = true;
-            for(var i = 1; i < 10; i++) {
+            for(var i = 1; i < 8; i++) {
                 $("#teacher-"+i).css('display','none');
             }
             next = current + 1;
