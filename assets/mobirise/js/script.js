@@ -133,7 +133,7 @@
     function slideToLeft() {
         if(current !== 1) {
             stopSlider = true;
-            for(var i = 1; i < 9; i++) {
+            for(var i = 1; i < 10; i++) {
                 $("#teacher-"+i).css('display','none');
             }
             current -= 1;
@@ -145,7 +145,7 @@
     function slideToRight() {
         if(current !== 9) {
             stopSlider = true;
-            for(var i = 1; i < 9; i++) {
+            for(var i = 1; i < 10; i++) {
                 $("#teacher-"+i).css('display','none');
             }
             next = current + 1;
