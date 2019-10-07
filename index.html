@@ -62,8 +62,8 @@
 
                 // создаем 10 попапов в случайных местах и добавляем их в группу
             
-                    coordinates[0] = 55.821077, 37.312451;DG.popup().setLatLng(coordinates).setContent('Я попап №1').addTo(popups);
-                    coordinates[1] = 55.851813493434946,37.18133333798974;DG.popup().setLatLng(coordinates).setContent('Я попап №1').addTo(popups);
+                    DG.popup().setLatLng([55.821077, 37.312451]).setContent('Я попап №1').addTo(popups);
+                   DG.popup().setLatLng([55.851813493434946,37.18133333798974]).setContent('Я попап №1').addTo(popups);
                
 
                 popups.addTo(map);
