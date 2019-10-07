@@ -24,25 +24,37 @@
   <link rel="stylesheet" href="assets/mobirise/css/aos.css" type="text/css">
   
   <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <script type="text/javascript">
-        var map;
-        var map2;
-    
-        DG.then(function () {
-            map = DG.map('map', {
-                center: [55.821077, 37.312451],
-                zoom: 10
+  
+  <script>
+            DG.then(function() {
+                var map,
+                    popups = DG.featureGroup(),
+                    coordinates = [];
+
+                map = DG.map('map', {
+                    center: [55.821077, 37.312451],
+                    zoom: 13
+                });
+
+                // создаем 10 попапов в случайных местах и добавляем их в группу
+                for (var i = 0; i < 10; i++) {
+                    coordinates[0] = 55.821077, 37.312451;
+                    coordinates[1] = 55.851813493434946,37.18133333798974;
+                    DG.popup()
+                        .setLatLng(coordinates)
+                        .setContent('<b>ЯЗЫКОВОЙ ЦЕНТР NO PROBLEMS</b><br><b style="color:lightgray;"><br>Запись по тел. +7(925)362-29-98</b><br><br>Пн-Пт 14.00 - 21.00<br><br><p style="color:yellow;">Московская область, Красногорск, Дачная д.9 (проход через шлагбаум)</p>')
+                        .addTo(popups);
+                }
+
+                popups.addTo(map);
+
+                // фокусируем область видимости на попапах
+                map.fitBounds(popups.getBounds());
             });
-            DG.popup().setLatLng(map.getCenter()).setContent('<b>ЯЗЫКОВОЙ ЦЕНТР NO PROBLEMS</b><br><b style="color:lightgray;"><br>Запись по тел. +7(925)362-29-98</b><br><br>Пн-Пт 14.00 - 21.00<br><br><p style="color:yellow;">Московская область, Красногорск, Дачная д.9 (проход через шлагбаум)</p>').openOn(map);
-          
-          map2 = DG.popup()
-                    .setLatLng([55.851813493434946,37.18133333798974]).setContent('<b>ЯЗЫКОВОЙ ЦЕНТР NO PROBLEMS</b><br><b style="color:lightgray;"><br>Запись по тел. +7(925)362-29-98</b><br><br>Пн-Пт 14.00 - 21.00<br><br><p style="color:yellow;">Московская область, Красногорск, пос. Нахабино, ул. Красноармейская, д.68</p>').openOn(map);
-          
-          
-     
-        });
-      
-    </script>
+        </script>
+  
+  
+   
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
