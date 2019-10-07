@@ -1645,15 +1645,15 @@ nav.transparent a:focus {
 	.map-frame {
 		display: block;
 		position: absolute;
-		top: 25px;
+		top: 5px;
 		right: 100px;
 		width: 330px;
-		height: 330px;
+		min-height: 330px;
 		padding: 15px;
 		background: #fff;
 		border: 5px #0c84da solid;
     border-radius: 10px;
-    box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.14);
     font-family: 'Lora', serif;
     text-align: center !important;
   } 
