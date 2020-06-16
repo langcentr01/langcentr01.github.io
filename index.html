@@ -1999,11 +1999,12 @@ $(function() {
         $.ajax({
           type: $form.attr('method'),
           url: $form.attr('action'),
+           dataType: "html",
           data: $form.serialize()
         }).done(function() {
-         alert('ok');
+         alert(data);
         }).fail(function() {
-          console.log('fail');
+          console.log(data);
         });
        
       });
