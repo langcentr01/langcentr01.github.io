@@ -2001,7 +2001,7 @@ $(function() {
           type: $form.attr('method'),
           url: $form.attr('action'),
           data: $form.serialize()
-        }).done(function() {
+        }).done(function(data) {
          alert('ok');
           $('#results').html(data); 
         }).fail(function() {
