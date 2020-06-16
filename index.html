@@ -1977,7 +1977,7 @@ style="background-color: rgb(255, 255, 255); padding-top: 100px; padding-bottom:
     var form_data = $(this).serialize(); 
     $.ajax({
       type: "POST", 
-      url: "mail-send.php",
+      url: "/mail-send.php",
       dataType: "html",
       data: form_data
     }).done(function (data) {
