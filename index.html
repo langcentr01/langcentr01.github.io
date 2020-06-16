@@ -1971,26 +1971,6 @@ style="background-color: rgb(255, 255, 255); padding-top: 100px; padding-bottom:
   <script>
     AOS.init();
   </script>
-<!--   <script>
- $(function () {    
-  $("#form-class2").submit(function (e) {
-    e.preventDefault();
-    var form_data = $(this).serialize(); 
-    $.ajax({
-      type: "POST", 
-      url: "https://www.noproblems-centre.ru/mail-send.php",
-      dataType: "html",
-      data: form_data
-    }).done(function (data) {
-       // $('#results').html(data); 
-       console.log(data);
-
-    }).fail(function (data) {
-        console.log(data);
-    });
-  }); 
-});
-  </script> -->
   <script>
 $(function() {
       $('form').submit(function(e) {
@@ -2002,11 +1982,10 @@ $(function() {
           url: $form.attr('action'),
           data: $form.serialize()
         }).done(function(data) {
-         alert('ok');
+         
           $('#results').html(data); 
         }).fail(function() {
-//           console.log(data);
-           alert('bad');
+    console.log('fail');
         });
        
       });
