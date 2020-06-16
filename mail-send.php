@@ -1,6 +1,6 @@
 <?php
-$project_name = 'info@baikal-lights.ru';
-$fromEmail = 'info@baikal-lights.ru';
+$project_name = 'info@noproblems-centre.ru';
+$fromEmail = 'info@noproblems-centre.ru';
 $emails = ['dir@kuznetsov.studio'];
 
 $domain = 'https://www.noproblems-centre.ru/';
