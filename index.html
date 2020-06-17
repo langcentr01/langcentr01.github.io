@@ -1983,7 +1983,9 @@ $(function() {
           data: $form.serialize()
         }).done(function(data) {
          
-          $('#results').html(data); 
+          $('#success-modal').modal('show')
+          setTimeout('$("#success-modal")modal.hide();',30000);
+//           $('#results').html(data); 
         }).fail(function() {
     console.log('fail');
         });
