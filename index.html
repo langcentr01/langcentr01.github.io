@@ -2029,7 +2029,8 @@ $(function() {
           setTimeout(function(){
  $('#success-modal').modal('hide');
 }, 3000);
-//           $('#results').html(data); 
+          console.log('good');
+          $('#results').html(data); 
         }).fail(function() {
     console.log('fail');
         });
