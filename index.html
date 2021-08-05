@@ -2023,6 +2023,7 @@ $(function() {
           url: $form.attr('action'),
           data: $form.serialize()
         }).done(function(data) {
+          alert("ok");
            $('#modal-lessons1').modal('hide');
           $('#success-modal').modal('show');
           setTimeout(function(){
