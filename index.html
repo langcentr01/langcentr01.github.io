@@ -2013,30 +2013,17 @@ style="background-color: rgb(255, 255, 255); padding-top: 100px; padding-bottom:
     form.addEventListener("submit", handleSubmit)
 </script> -->
    <script>
-$(function() {
-      $('form').submit(function(e) {
-         //отмена действия по умолчанию для кнопки submit
-        e.preventDefault(); 
-        var $form = $(this);
-        $.ajax({
-          type: $form.attr('method'),
-          url: $form.attr('action'),
-          data: $form.serialize()
-        }).done(function(data) {
-          alert("ok");
-           $('#modal-lessons1').modal('hide');
-          $('#success-modal').modal('show');
-          setTimeout(function(){
- $('#success-modal').modal('hide');
-}, 3000);
-          console.log('good');
-          $('#results').html(data); 
-        }).fail(function() {
-    console.log('fail');
-        });
-       
-      });
-    });   
+$("#form-class").submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "https://chess-znatok.ru/mail-send.php",
+        data: $("#wdh_form").serialize(),
+        success: function(data) {
+            $("#wdh_result_form").html(data);
+        }
+    });
+});
   </script>
 </body>
 </html>
