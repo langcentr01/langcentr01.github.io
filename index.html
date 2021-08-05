@@ -130,7 +130,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div data-form-type="formoid">
-                                        <form class="form-inline" id="form-class" action="https://chess-znatok.ru/mail-send.php" method="post">
+                                        <form class="form-inline" id="form-class" action="https://formspree.io/f/xpzkyobv" method="post">
                                             <div class="modal-body">
                                                 <input type="hidden" name="subject" value="Заявка (запись в NO PROBLEMS) от посетителя сайта">
                                                     <div class="text-center">
@@ -460,7 +460,7 @@
 
                         <div data-form-type="formoid">
                           <div id="results"></div>
-                     <form class="form-inline" id="form-class" action="https://chess-znatok.ru/mail-send.php" method="post">
+                     <form class="form-inline" id="form-class" action="https://formspree.io/f/xpzkyobv" method="post">
                                     <div class="">
                                         <input type="hidden" name="subject" value="Заявка (запись в NO PROBLEMS) от посетителя сайта">
                                             <div class="text-center">
@@ -1990,7 +1990,29 @@ style="background-color: rgb(255, 255, 255); padding-top: 100px; padding-bottom:
   <script>
     AOS.init();
   </script>
-  <script>
+ <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+<!--   <script>
 $(function() {
       $('form').submit(function(e) {
          //отмена действия по умолчанию для кнопки submit
@@ -2013,6 +2035,6 @@ $(function() {
        
       });
     });   
-  </script>
+  </script> -->
 </body>
 </html>
