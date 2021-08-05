@@ -2020,6 +2020,7 @@ $("#form-class").submit(function(e){
         url: "https://chess-znatok.ru/mail-send.php",
         data: $("#wdh_form").serialize(),
         success: function(data) {
+          alert('sdsd');
             $("#wdh_result_form").html(data);
         }
     });
