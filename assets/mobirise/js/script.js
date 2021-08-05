@@ -205,7 +205,7 @@
     e.preventDefault();
     $.ajax({
          type: 'POST',
-         url: 'https://jumprock.co/mail/noproblems',
+         url: 'https://chess-znatok.ru/mail-send.php',
          data: $(this).serialize(),
          beforeSend: function(params) {
           
