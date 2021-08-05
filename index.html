@@ -2012,19 +2012,6 @@ style="background-color: rgb(255, 255, 255); padding-top: 100px; padding-bottom:
     }
     form.addEventListener("submit", handleSubmit)
 </script> -->
-   <script>
-$("#form-class").submit(function(e){
-    e.preventDefault();
-    $.ajax({
-        type: "POST",
-        url: "https://chess-znatok.ru/mail-send.php",
-        data: $("#wdh_form").serialize(),
-        success: function(data) {
-          alert('sdsd');
-            $("#wdh_result_form").html(data);
-        }
-    });
-});
-  </script>
+
 </body>
 </html>
